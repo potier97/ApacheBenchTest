@@ -1,0 +1,47 @@
+This is ApacheBench, Version 2.3 <$Revision: 1913912 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+
+
+Server Software:        Werkzeug/3.0.2
+Server Hostname:        localhost
+Server Port:            5000
+
+Document Path:          /cipher
+Document Length:        972 bytes
+
+Concurrency Level:      300
+Time taken for tests:   29.598 seconds
+Complete requests:      10000
+Failed requests:        87
+   (Connect: 0, Receive: 29, Length: 29, Exceptions: 29)
+Keep-Alive requests:    0
+Total transferred:      11346998 bytes
+Total body sent:        6980000
+HTML transferred:       9691812 bytes
+Requests per second:    337.86 [#/sec] (mean)
+Time per request:       887.940 [ms] (mean)
+Time per request:       2.960 [ms] (mean, across all concurrent requests)
+Transfer rate:          374.39 [Kbytes/sec] received
+                        230.30 kb/s sent
+                        604.68 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  118 507.7      0    7239
+Processing:    16  437 2185.0    224   28520
+Waiting:        0  382 2052.9    211   28510
+Total:         16  554 2330.2    227   29584
+
+Percentage of the requests served within a certain time (ms)
+  50%    227
+  66%    248
+  75%    258
+  80%    269
+  90%    310
+  95%   1309
+  98%   3310
+  99%   7431
+ 100%  29584 (longest request)

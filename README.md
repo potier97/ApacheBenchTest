@@ -4,9 +4,9 @@ API REST - Flask. Esta es una API básica que proporciona 2 endpoints, para cifr
 # Ejecución 
 Para ejecutar la aplicación siga las siguientes instrucciones: 
 
-## Crear un nuevo ambiente virtual
-* ```$ python3 -m venv nuevo_ambiente```
-* ```$ source nuevo_ambiente/bin/activate```
+## Crear un nuevo ambiente virtual (WINDOWS)
+* ```$ python -m venv venv```
+* ```$ .\venv\Scripts\activate```
 
 ## Instalar las dependencias
 * ```$ pip install flask``` 
@@ -45,7 +45,20 @@ donde:
 * ```-c (concurrency)```. Cantidad de conexiones concurrentes
 * ```-p (file.json)```. JSON que se envia en el cuerpo del request
 * ```-T application/json```. Especifica la estructura de datos del body
+* ```-e data.csv```. Guarda los resultados en un archivo CSV
+
+## Script de pruebas
+
+* ```$ sh script.sh```
+
+contiene los comandos de prueba de carga para los endpoints de cifrado y descifrado.
 
 
-# Cifrado RC4 basado en el proyecto:
-* [https://github.com/g2jun/RC4-Python](https://github.com/g2jun/RC4-Python)
+## HTOP
+
+Instalar htop
+* ```$  apk add htop```
+
+Ejecutar htop
+* ```$ htop```
+ 
